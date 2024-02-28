@@ -33,11 +33,12 @@ body {
 .third-box{
     background-color: none;
     border: 3px solid black;
-    height: 200px;
     width: 90%;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2);
 }
 .button-box {
     background-color: red;
@@ -47,21 +48,21 @@ body {
     align-items: center;
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: repeat(2);
-    height: 50px;
-    width: 50%;
     margin-bottom: 5px;
+    grid-column: span 2;
 }
 .button-box > button {
     cursor: pointer;
     border: 1px solid black;
     outline: none;
-    background-color: rgb(173, 216, 230);
+    background-color: none;
 }
-
 .button-box > button:hover {
     background-color: rgba(173, 216, 230, .9) ;
 }
-
 .span-two {
     grid-column: span 2; /* Fai sì che i bottoni span-two occupino due colonne */
+}
+.output {
+    text-align: center;
 }
