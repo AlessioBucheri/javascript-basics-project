@@ -5,18 +5,31 @@
     scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(to right, #7EBDC2, #FCDFA6);
+    background: rgba(0, 137, 19, 0.689);
 }
 .monofett-regular {
     font-family: "Monofett", monospace;
     font-weight: 400;
     font-style: normal;
 }
+.teko-uniquifier {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 .first-box-title {
     text-align: center;
     padding: 10px;
     font-family: "Monofett", monospace;
-    font-size: 40px;
+    font-size: 60px;
+    text-shadow: 5px 7px rgba(0, 0, 0, 0.201);
+}
+.third-box-title{
+    text-align: center;
+    padding: 10px;
+    font-family: "Teko", sans-serif;
+    font-size: 30px;
+    text-shadow: 5px 7px rgba(0, 0, 0, 0.201);
 }
 .first-box{
     display: flex;
@@ -26,16 +39,15 @@ body {
 .second-box {
     background-color: none;
     margin-bottom: 5px;
-    border: 3px solid black; 
+    /* border: 3px solid black; */ 
     height: fit-content;
     width: 90%;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 .third-box{
     background-color: none;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     width: 90%;
     display: flex;
     justify-content: center;
@@ -47,8 +59,8 @@ body {
 }
 .button-box {
     padding: 10px;
-    background-color: red;
-    border: 3px solid black;
+    background-color: none;
+    /* border: 3px solid black; */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -56,12 +68,18 @@ body {
     grid-template-rows: repeat(2);
     margin-bottom: 5px;
     grid-column: span 2;
+    font-family: "Teko", sans-serif;
 }
 .button-box > button {
     cursor: pointer;
     border: 3px solid black;
     outline: none;
     background-color: none;
+    font-family: "Teko", sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.201);
 }
 .button-box > button:hover {
     background-color: rgba(173, 216, 230, .9) ;
@@ -77,4 +95,24 @@ body {
     height: 300px;
     padding: 10px;
 }
+img {
+    border: 3px solid black;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.201), -1em 0 .4em rgba(0, 0, 0, 0.201);
+}
 
+@media (max-width: 430px) {
+   .second-box{
+    display: wrap;
+    flex-wrap: wrap;
+   }
+   img {
+    width: 70%;
+    height: 50%;
+   }
+   .third-box{
+    background-color: none;
+    /* border: 3px solid black; */
+    width: 90%;
+    }
+    
+}
