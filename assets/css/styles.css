@@ -106,14 +106,15 @@ img {
     flex-wrap: wrap;
    }
    img {
-    width: 70%;
-    height: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
    }
    .third-box{
     background-color: none;
     /* border: 3px solid black; */
     width: 90%;
-    position: sticky;
+    position: relative;
     }
 
 }
