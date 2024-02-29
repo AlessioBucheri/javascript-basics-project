@@ -113,6 +113,7 @@ img {
     background-color: none;
     /* border: 3px solid black; */
     width: 90%;
+    position: sticky;
     }
-    
+
 }
