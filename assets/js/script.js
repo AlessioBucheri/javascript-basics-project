@@ -19,16 +19,28 @@ document.getElementById("increaseBtn").onclick = function(){
 document.getElementById("confirm").onclick = function(){
     if (count === 5 && livello1 == 1){
         alert("Corretto, passiamo al livello successivo!")
-        document.getElementById('lvl-1-A').src = './assets/images/lvl-2-A.png';
-        document.getElementById('lvl-1-B').src = './assets/images/lvl-2-B.png';
+        document.getElementById("lvl-1-A").src = './assets/images/lvl-2-A.png';
+        document.getElementById("lvl-1-B").src = './assets/images/lvl-2-B.png';
         ++livello1;
+        document.getElementById("countLabel").innerHTML = 0;
+        count = 0;
     }
     else if (count === 7 && livello1 == 2){
         alert("Corretto, passiamo all'ultimo livello!")
         document.getElementById('lvl-1-A').src = './assets/images/lvl-3-A.png';
         document.getElementById('lvl-1-B').src = './assets/images/lvl-3-B.png';
+        ++livello1;
+        document.getElementById("countLabel").innerHTML = 0;
+        count = 0;
+    }
+    else if (count === 10 && livello1 == 3){
+        alert("Hai vinto, congratulazioni!");
+        document.getElementById("countLabel").innerHTML = 0;
+        count = 0;
     }
     else {
         alert("Non è giusto, ritenta!");
+        document.getElementById("countLabel").innerHTML = 0;
+        count = 0;
     }
 }
