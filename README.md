@@ -10,7 +10,7 @@
 
 ## :zap:  Try it!
 You can try this simple like counter at this link:
-[do you like it?](https://simplelikecounter.netlify.app/)
+[do you like it?](https://alessiobucheri.github.io/javascript-basics-project/)
 
 ## :page_with_curl:  License
 [MIT](https://choosealicense.com/licenses/mit/)
