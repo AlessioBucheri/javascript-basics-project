@@ -1,3 +1,8 @@
+//Grid
+const grid = document.createElement('div');
+grid.setAttribute( 'id', 'grid' );
+grid.setAttribute( 'class', 'grid' );
+
 //Decrease Button
 const decreaseButton = document.createElement('button');
 decreaseButton.textContent = '-';
@@ -14,26 +19,27 @@ increaseBtn.setAttribute( 'class', 'button' );
 const countLabel = document.createElement('label');
 countLabel.textContent = 0;
 countLabel.setAttribute( 'id', 'countLabel' );
-countLabel.setAttribute( 'class', 'output', 'span-two' );
+countLabel.setAttribute( 'class', 'output span-two' );
 
 //Reset Button
 const resetBtn = document.createElement('button');
 resetBtn.textContent = 'Reset';
 resetBtn.setAttribute( 'id', 'resetBtn' );
-resetBtn.setAttribute('class', 'button','span-two');
+resetBtn.setAttribute('class', 'button span-two');
 
 //Confirm Button
 const confirmBtn = document.createElement('button');
 confirmBtn.textContent = 'Conferma';
 confirmBtn.setAttribute( 'id', 'confirm' );
-confirmBtn.setAttribute('class', 'button', 'span-two');
+confirmBtn.setAttribute('class', 'button span-two');
 
 //DOM modifier
-document.getElementById('counter').append(decreaseButton);
-document.getElementById('counter').append(countLabel);
-document.getElementById('counter').append(increaseBtn);
-document.getElementById('counter').append(resetBtn);
-document.getElementById('counter').append(confirmBtn);
+document.getElementById('counter').append(grid);
+document.getElementById('grid').append(decreaseButton);
+document.getElementById('grid').append(countLabel);
+document.getElementById('grid').append(increaseBtn);
+document.getElementById('grid').append(resetBtn);
+document.getElementById('grid').append(confirmBtn);
 
 
 

@@ -46,7 +46,7 @@ body {
     display: flex;
     justify-content: space-around;    
 }
-.third-box {
+#counter {
     height: fit-content;
     width: 90%;
     display: flex;
@@ -54,10 +54,8 @@ body {
     position: fixed; /* Imposta la posizione fissa */
     bottom: 0; /* Allinea il fondo del div con il fondo della viewport */
     align-items: center;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2);
 }
-#counter {
+#grid {
     padding: 50px;
     display: grid;
     justify-content: center;
@@ -68,7 +66,7 @@ body {
     grid-column: span 2;
     font-family: "Teko", sans-serif;
 }
-#counter > .button {
+.button {
     cursor: pointer;
     border: 3px solid black;
     outline: none;
@@ -80,9 +78,9 @@ body {
     margin-left: 10px;
     margin-top: 5px;
     background-color: rgba(0, 0, 0, 0.201);
-    height: 50px;
+    height: fit-content;
 }
-#counter > .button:hover {
+#grid > .button:hover {
     background-color: rgba(173, 216, 230, .9) ;
 }
 .span-two {
@@ -139,27 +137,29 @@ img {
     .first-box-title {
         font-size: 50px;
     }
-    .third-box{
+    #counter{
         width: 90%;
-        position: static;
+        justify-content: right;
     }
     .third-box-title{
+        position: absolute;
+        top: 415px;
+        left: 270px;
         text-align: center;
         font-family: "Teko", sans-serif;
-        font-size: 30px;
+        font-size: 25px;
         text-shadow: 1px 0 20px rgba(255, 255, 255);
     }
-    #counter {
-        padding: 20px;
+    .grid {
         display: grid;
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(4, 50px);
+        grid-template-columns: repeat(4, 30px);
         grid-template-rows: repeat(2);
         grid-column: span 2;
         font-family: "Teko", sans-serif;
     }
-    #counter > .button {
+    .grid > .button {
         height: fit-content;
         font-size: 20px;
         text-align: center;
