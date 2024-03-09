@@ -109,6 +109,12 @@ img {
         font-size: 60px;
         text-shadow: 1px 0 20px rgba(255, 255, 255);
     }
+    .third-box-title{
+        text-align: center;
+        font-family: "Teko", sans-serif;
+        font-size: 25px;
+        text-shadow: 1px 0 20px rgba(255, 255, 255);
+    }
    .second-box{
         display: wrap;
         flex-wrap: wrap;
@@ -119,9 +125,9 @@ img {
         margin-bottom: 10px;
         margin-top: 0;
    }
-   .third-box{
-    width: 90%;
-    position: relative;
+   #counter{
+    width: 100vh;
+    justify-content: center;
     }
 }
 
@@ -142,9 +148,6 @@ img {
         justify-content: right;
     }
     .third-box-title{
-        position: absolute;
-        top: 415px;
-        left: 270px;
         text-align: center;
         font-family: "Teko", sans-serif;
         font-size: 25px;
