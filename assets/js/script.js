@@ -1,3 +1,42 @@
+//Decrease Button
+const decreaseButton = document.createElement('button');
+decreaseButton.textContent = '-';
+decreaseButton.setAttribute( 'id', 'decreaseBtn' );
+decreaseButton.setAttribute( 'class', 'button' );
+
+//Increase Button
+const increaseBtn = document.createElement('button');
+increaseBtn.textContent = '+';
+increaseBtn.setAttribute( 'id', 'increaseBtn' );
+increaseBtn.setAttribute( 'class', 'button' );
+
+//Output
+const countLabel = document.createElement('label');
+countLabel.textContent = 0;
+countLabel.setAttribute( 'id', 'countLabel' );
+countLabel.setAttribute( 'class', 'output', 'span-two' );
+
+//Reset Button
+const resetBtn = document.createElement('button');
+resetBtn.textContent = 'Reset';
+resetBtn.setAttribute( 'id', 'resetBtn' );
+resetBtn.setAttribute('class', 'button','span-two');
+
+//Confirm Button
+const confirmBtn = document.createElement('button');
+confirmBtn.textContent = 'Conferma';
+confirmBtn.setAttribute( 'id', 'confirm' );
+confirmBtn.setAttribute('class', 'button', 'span-two');
+
+//DOM modifier
+document.getElementById('counter').append(decreaseButton);
+document.getElementById('counter').append(countLabel);
+document.getElementById('counter').append(increaseBtn);
+document.getElementById('counter').append(resetBtn);
+document.getElementById('counter').append(confirmBtn);
+
+
+
 let count = 0;
 let livello1 = 1;
 
@@ -44,3 +83,4 @@ document.getElementById("confirm").onclick = function(){
         count = 0;
     }
 }
+

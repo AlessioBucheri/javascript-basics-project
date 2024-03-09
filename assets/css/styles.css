@@ -46,7 +46,8 @@ body {
     display: flex;
     justify-content: space-around;    
 }
-.third-box{
+.third-box {
+    height: fit-content;
     width: 90%;
     display: flex;
     justify-content: center;
@@ -56,7 +57,7 @@ body {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2);
 }
-.button-box {
+#counter {
     padding: 50px;
     display: grid;
     justify-content: center;
@@ -67,7 +68,7 @@ body {
     grid-column: span 2;
     font-family: "Teko", sans-serif;
 }
-.button-box > button {
+#counter > .button {
     cursor: pointer;
     border: 3px solid black;
     outline: none;
@@ -81,7 +82,7 @@ body {
     background-color: rgba(0, 0, 0, 0.201);
     height: 50px;
 }
-.button-box > button:hover {
+#counter > .button:hover {
     background-color: rgba(173, 216, 230, .9) ;
 }
 .span-two {
@@ -148,7 +149,8 @@ img {
         font-size: 30px;
         text-shadow: 1px 0 20px rgba(255, 255, 255);
     }
-    .button-box {
+    #counter {
+        padding: 20px;
         display: grid;
         justify-content: center;
         align-items: center;
@@ -157,7 +159,7 @@ img {
         grid-column: span 2;
         font-family: "Teko", sans-serif;
     }
-    .button-box > button {
+    #counter > .button {
         height: fit-content;
         font-size: 20px;
         text-align: center;
