@@ -145,7 +145,8 @@ img {
     }
     #counter{
         width: 90%;
-        justify-content: right;
+        justify-content: center;
+        position: relative;
     }
     .third-box-title{
         text-align: center;
